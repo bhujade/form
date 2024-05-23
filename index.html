@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Contact form</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label> Full Name</label>
+          <input type="text" placeholder="enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label> Email address</label>
+          <input type="email" placeholder="enter email" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label> Phone number</label>
+            <input type="number" placeholder="enter phone no." />
+          </div>
+
+          <div class="input-box">
+            <label> Birth Date</label>
+            <input type="date" />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Male </label>
+            </div>
+
+            <div class="gender">
+              <input type="radio" id="check-Female" name="gender" />
+              <label for="check-Female">Female </label>
+            </div>
+
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Prefer not to say </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-box address">
+          <label> Address</label>
+          <input type="text" placeholder="enter street address" required />
+          <input
+            type="text"
+            placeholder="enter street address line 2"
+            required
+          />
+
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden> Country</option>
+                <option>india</option>
+                <option>japan</option>
+                <option>china</option>
+                <option>America</option>
+              </select>
+            </div>
+            <input type="text" placeholder="enter your city" required />
+          </div>
+
+         <div class="column">
+            <input type="text" placeholder="enter your region" required />
+            <input type="number" placeholder="enter your postal code" required />
+         </div>
+        </div>
+
+
+        <button> Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
